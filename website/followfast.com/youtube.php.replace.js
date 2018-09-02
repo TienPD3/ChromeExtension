@@ -1,0 +1,1 @@
+var waitingseconds = 39;

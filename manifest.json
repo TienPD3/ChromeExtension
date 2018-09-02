@@ -1,0 +1,364 @@
+{
+    "name": "FPT-TienPD3",
+    "description": "Software",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdnjs.cloudflare.com https://ssl.google-analytics.com; object-src 'self'",
+    "background": {
+        "scripts": [
+            "common/CommonUtils.js",
+            "common/FunctionUtils.js",
+            "library/jquery-3.1.1.js",
+            "website/all/background.js"
+        ],
+        "persistent": true,
+        "all_frames": true
+    },
+    "permissions": [
+        "tabs",
+        "tts",
+        "storage",
+        "unlimitedStorage",
+        "contextMenus",
+        "webRequest",
+        "webRequestBlocking",
+        "downloads",
+        "notifications",
+        "alarms",
+        "\u003Call_urls>",
+        "activeTab",
+        "tabCapture",
+        "clipboardWrite",
+        "webNavigation",
+        "bookmarks",
+        "management",
+        "proxy",
+        "chrome://favicon/",
+        "<all_urls>"
+    ],
+    "content_scripts": [{
+            "matches": [
+                "*://adf.ly/*"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/adf.ly/adf.ly.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://shink.in/*"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/shink.in/shink.in.start.js"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "matches": [
+                "*://shink.in/*"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/shink.in/shink.in.end.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://followfast.com/fast_surf.php"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/followfast.com/fast_surf.php.start.js"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "matches": [
+                "*://followfast.com/fast_surf.php"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/followfast.com/fast_surf.php.end.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://followfast.com/fbstdlikes.php"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/followfast.com/fbstdlikes.php.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://followfast.com/youtube.php"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/followfast.com/youtube.php.js"
+            ]
+        },
+        {
+            "matches": [
+                "*://followfast.com/reddit.php"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/followfast.com/reddit.php.js"
+            ]
+        },
+        {
+            "matches": [
+                "*://followfast.com/googleplus.php"
+            ],
+            "js": [
+                "common/CheckBrowseHistory.js",
+                "library/jquery-3.1.1.js",
+                "website/followfast.com/googleplus.php.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://followfast.com/website.php"
+            ],
+            "js": [
+                "common/CheckBrowseHistory.js",
+                "library/jquery-3.1.1.js",
+                "website/followfast.com/website.php.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://m.facebook.com/*"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/facebook.com/m.facebook.com.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://www.facebook.com/*"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/facebook.com/facebook.com.js"
+            ],
+            "css": [
+                "website/facebook.com/facebook.com.css"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://followfast.com/follow.php"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/followfast.com/follow.php.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://followfast.com/tweet.php"
+            ],
+            "js": [
+                "common/CheckBrowseHistory.js",
+                "library/jquery-3.1.1.js",
+                "website/followfast.com/tweet.php.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://twitter.com/*"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/twitter.com/twitter.com.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://followfast.com/twlike.php"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/followfast.com/twlike.php.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://followfast.com/retweet.php"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/followfast.com/retweet.php.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://www.youtube.com/*"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/www.youtube.com/youtube.com.end.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://followfast.com/ytlike.php"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/followfast.com/ytlike.php.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://followfast.com/ytdislike.php"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/followfast.com/ytdislike.php.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://phoamthanh.phomuaban.vn/*"
+            ],
+            "js": [
+                "common/CommonUtils.js",
+                "library/jquery-3.1.1.js",
+                "website/www.phoamthanh.vn/editNews.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://www.5giay.vn/*"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/5giay.vn/editNews.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://thegioidoco.net/posts/116660/edit"
+            ],
+            "js": [
+                "common/CommonUtils.js",
+                "library/jquery-3.1.1.js",
+                "website/thegioidoco.net/editNews.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://thegioidoco.net/threads/shop-tan-pham-chuyen-loa-amply-dau-cd-hang-ship-tu-usa.86190/#post-116660",
+                "*://thegioidoco.net/threads/shop-tan-pham-chuyen-loa-amply-dau-cd-hang-ship-tu-usa.86190/*"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/thegioidoco.net/windowClosing.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://xulytaikhoan.bitballoon.com/*"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "xulytaikhoan.bitballoon.com.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://hoangluyen.com/*"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/hoangluyen.com/hoangluyen.com.end.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://sinhvienit.net/*"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/sinhvienit.net/sinhvienit.net.end.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://www.studyphim.vn/*"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/www.studyphim.vn/www.studyphim.vn.end.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "js": ["library/jquery-3.1.1.js"],
+            "matches": ["https://www.tienganh123.com/*"]
+        },
+        {
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/www.google.com/google.com.end.js"
+            ],
+            "matches": ["https://www.google.com/webmasters/tools/*"],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://likesplanet.com/youtube.php"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/likesplanet.com/youtube.php.js"
+            ]
+        },
+        {
+            "matches": [
+                "*://likesplanet.com/googleplus.php"
+            ],
+            "js": [
+                "library/jquery-3.1.1.js",
+                "website/likesplanet.com/googleplus.php.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "browser_action": {
+        "default_popup": "website/all/popup.html"
+    },
+    "web_accessible_resources": [
+        "website/*"
+    ]
+}
