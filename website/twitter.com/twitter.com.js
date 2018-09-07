@@ -59,6 +59,6 @@ $(document).ready(function () {
                 clearInterval(doComplete);
                 window.close();
             }
-        }, 1000);
+        }, 2000);
     }
 });

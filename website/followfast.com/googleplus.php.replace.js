@@ -7,7 +7,6 @@ function OpenLike(mysiteid, siteowner, mysite, cpc, jaa) {
             if (msg > 0) {
                 $("#stat" + jaa).html('</br><font size="4" color="green">Great!<br>Points added.</font>');
                 document.getElementById('likeme' + jaa).style.display = 'none';
-                document.getElementById('Mybalancenow').contentWindow.location.reload(true);
             }
             if (msg == 0) {
                 $("#stat" + jaa).html('</br><font size="4" color="red">Not Plused!</font>');

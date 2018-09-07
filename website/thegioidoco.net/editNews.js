@@ -2,11 +2,11 @@ $(document).ready(function () {
     if ('TheGioiDoCo-TienPD3' == window.name) {
         if (isLoginedTGDC()) {
             console.log("Đã đăng nhập.")
+            editNewsTGDC();
         } else {
             loginWebsiteTGDC();
+            location.reload();
         }
-
-        editNewsTGDC();
     }
 });
 
