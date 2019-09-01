@@ -4,12 +4,12 @@ cls
 echo https://tortoisesvn.net/downloads.html
 echo https://github.com/TienPD3/ChromeExtension.git
 echo == Initiating system instance variables...
-echo. -- Setting the variables...
 
+echo. -- Setting the variables...
 FOR /F "skip=2 tokens=2,*" %%A IN ('reg.exe query "HKEY_LOCAL_MACHINE\SOFTWARE\TortoiseSVN" /v "Directory"') DO set "DFMT=%%B"
 
 :: Here you need to make some changes to suit your system.
-set SOURCE=%cd%
+set SOURCE=%~dp0
 set SVN=%DFMT%bin
 
 :: Unless you want to modify the script, this is enough.
