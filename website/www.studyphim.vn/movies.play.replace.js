@@ -90,7 +90,7 @@ $(document).ready(function() {
 		});
 
 	});
-debugger;
+
 	$player.on('play', function() {
 
 		if ($hideSub.is(':checked')) {

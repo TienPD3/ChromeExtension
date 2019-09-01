@@ -13,9 +13,10 @@ $(document).ready(function () {
                 var arrTable = $('.likebox0');
                 if (arrTable.length > 0) {
                     $(arrTable[0]).find('input[value="LIKE"]').click();
-                } else {
-                    window.close();
-                }
+                } 
+                // else {
+                //     window.close();
+                // }
             }
         }, 500);
     //}

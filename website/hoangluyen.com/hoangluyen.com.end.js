@@ -1,6 +1,6 @@
 $(document).ready(function () {
     if ('https://hoangluyen.com/submit-url-ping-sitemap/' == location.href) {
-        $('input[name="url"]').val('http://shoptanpham.com/sitemap.xml');
+        $('input[name="url"]').val('https://shoptanpham.com/sitemap.xml');
         $('input[value="Submit URL"]').click();
     }
     

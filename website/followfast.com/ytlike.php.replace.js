@@ -88,6 +88,7 @@ function GetSubCount(mysiteaccid1, pageuserowner, code) {
                 $("#Hint").html('<font size="4" color="red">Not Liked!:' + intCount + ':' + countLike + '</font>');
                 GetSubCount(mysiteaccid1, pageuserowner, code);
             }
+            document.getElementById('Mybalancenow').contentWindow.location.reload(true);
         }
     });
 }

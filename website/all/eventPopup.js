@@ -30,7 +30,6 @@ $(document).ready(function () {
     // ********** [End by http://thegioidoco.net/] ********** //
 
     $('#loginTiengAnh123').click(function () {
-        debugger;
         updateData();
         login();
     })

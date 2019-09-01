@@ -8,7 +8,7 @@
         "scripts": [
             "common/CommonUtils.js",
             "common/FunctionUtils.js",
-            "library/jquery-3.1.1.js",
+            "library/jquery.js",
             "website/all/background.js"
         ],
         "persistent": true,
@@ -33,7 +33,6 @@
         "bookmarks",
         "management",
         "proxy",
-        "chrome://favicon/",
         "<all_urls>"
     ],
     "content_scripts": [{
@@ -41,7 +40,7 @@
                 "*://adf.ly/*"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/adf.ly/adf.ly.js"
             ],
             "run_at": "document_end"
@@ -51,7 +50,7 @@
                 "*://shink.in/*"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/shink.in/shink.in.start.js"
             ],
             "run_at": "document_start"
@@ -61,7 +60,7 @@
                 "*://shink.in/*"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/shink.in/shink.in.end.js"
             ],
             "run_at": "document_end"
@@ -71,7 +70,7 @@
                 "*://followfast.com/fast_surf.php"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/followfast.com/fast_surf.php.start.js"
             ],
             "run_at": "document_start"
@@ -81,7 +80,7 @@
                 "*://followfast.com/fast_surf.php"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/followfast.com/fast_surf.php.end.js"
             ],
             "run_at": "document_end"
@@ -91,7 +90,7 @@
                 "*://followfast.com/fbstdlikes.php"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/followfast.com/fbstdlikes.php.js"
             ],
             "run_at": "document_end"
@@ -101,7 +100,7 @@
                 "*://followfast.com/youtube.php"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/followfast.com/youtube.php.js"
             ]
         },
@@ -110,7 +109,7 @@
                 "*://followfast.com/reddit.php"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/followfast.com/reddit.php.js"
             ]
         },
@@ -120,7 +119,7 @@
             ],
             "js": [
                 "common/CheckBrowseHistory.js",
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/followfast.com/googleplus.php.js"
             ],
             "run_at": "document_end"
@@ -131,7 +130,7 @@
             ],
             "js": [
                 "common/CheckBrowseHistory.js",
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/followfast.com/website.php.js"
             ],
             "run_at": "document_end"
@@ -141,7 +140,7 @@
                 "*://m.facebook.com/*"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/facebook.com/m.facebook.com.js"
             ],
             "run_at": "document_end"
@@ -151,7 +150,7 @@
                 "*://www.facebook.com/*"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/facebook.com/facebook.com.js"
             ],
             "css": [
@@ -164,7 +163,7 @@
                 "*://followfast.com/follow.php"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/followfast.com/follow.php.js"
             ],
             "run_at": "document_end"
@@ -175,7 +174,7 @@
             ],
             "js": [
                 "common/CheckBrowseHistory.js",
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/followfast.com/tweet.php.js"
             ],
             "run_at": "document_end"
@@ -185,7 +184,7 @@
                 "*://twitter.com/*"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/twitter.com/twitter.com.js"
             ],
             "run_at": "document_end"
@@ -195,7 +194,7 @@
                 "*://followfast.com/twlike.php"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/followfast.com/twlike.php.js"
             ],
             "run_at": "document_end"
@@ -205,7 +204,7 @@
                 "*://followfast.com/retweet.php"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/followfast.com/retweet.php.js"
             ],
             "run_at": "document_end"
@@ -215,7 +214,7 @@
                 "*://www.youtube.com/*"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/www.youtube.com/youtube.com.end.js"
             ],
             "run_at": "document_end"
@@ -225,7 +224,7 @@
                 "*://followfast.com/ytlike.php"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/followfast.com/ytlike.php.js"
             ],
             "run_at": "document_end"
@@ -235,8 +234,28 @@
                 "*://followfast.com/ytdislike.php"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/followfast.com/ytdislike.php.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://followfast.com/ytsub.php"
+            ],
+            "js": [
+                "library/jquery.js",
+                "website/followfast.com/ytsub.php.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "*://www.pinterest.com/*"
+            ],
+            "js": [
+                "library/jquery.js",
+                "website/www.pinterest.com/www.pinterest.com.js"
             ],
             "run_at": "document_end"
         },
@@ -246,7 +265,7 @@
             ],
             "js": [
                 "common/CommonUtils.js",
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/www.phoamthanh.vn/editNews.js"
             ],
             "run_at": "document_end"
@@ -256,7 +275,7 @@
                 "*://www.5giay.vn/*"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/5giay.vn/editNews.js"
             ],
             "run_at": "document_end"
@@ -267,7 +286,7 @@
             ],
             "js": [
                 "common/CommonUtils.js",
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/thegioidoco.net/editNews.js"
             ],
             "run_at": "document_end"
@@ -278,7 +297,7 @@
                 "*://thegioidoco.net/threads/shop-tan-pham-chuyen-loa-amply-dau-cd-hang-ship-tu-usa.86190/*"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/thegioidoco.net/windowClosing.js"
             ],
             "run_at": "document_end"
@@ -288,7 +307,7 @@
                 "*://xulytaikhoan.bitballoon.com/*"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "xulytaikhoan.bitballoon.com.js"
             ],
             "run_at": "document_end"
@@ -298,7 +317,7 @@
                 "*://hoangluyen.com/*"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/hoangluyen.com/hoangluyen.com.end.js"
             ],
             "run_at": "document_end"
@@ -308,7 +327,7 @@
                 "*://sinhvienit.net/*"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/sinhvienit.net/sinhvienit.net.end.js"
             ],
             "run_at": "document_end"
@@ -318,18 +337,28 @@
                 "*://www.studyphim.vn/*"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/www.studyphim.vn/www.studyphim.vn.end.js"
             ],
             "run_at": "document_end"
         },
         {
-            "js": ["library/jquery-3.1.1.js"],
+            "matches": [
+                "*://unica.vn/*"
+            ],
+            "js": [
+                "library/jquery.js",
+                "website/unica.vn/unica.vn.end.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "js": ["library/jquery.js"],
             "matches": ["https://www.tienganh123.com/*"]
         },
         {
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/www.google.com/google.com.end.js"
             ],
             "matches": ["https://www.google.com/webmasters/tools/*"],
@@ -340,7 +369,7 @@
                 "*://likesplanet.com/youtube.php"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/likesplanet.com/youtube.php.js"
             ]
         },
@@ -349,7 +378,7 @@
                 "*://likesplanet.com/googleplus.php"
             ],
             "js": [
-                "library/jquery-3.1.1.js",
+                "library/jquery.js",
                 "website/likesplanet.com/googleplus.php.js"
             ],
             "run_at": "document_end"
@@ -359,6 +388,7 @@
         "default_popup": "website/all/popup.html"
     },
     "web_accessible_resources": [
-        "website/*"
+        "website/*",
+        "library/*"
     ]
 }

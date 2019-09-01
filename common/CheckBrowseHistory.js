@@ -25,7 +25,8 @@ function compareVersionNew(link) {
             var versionNew = getVersionLink(link);
             var versionOld = response[link];
             if (versionNew != versionOld) {
-                isOK = "Version New: " + versionNew + ", Version Old: " + versionOld + ".";
+                // isOK = "Version New: " + versionNew + ", Version Old: " + versionOld + ".";
+                isOK = "";
                 copyText(versionNew);
             }
         }

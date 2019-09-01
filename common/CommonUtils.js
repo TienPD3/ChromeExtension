@@ -1,6 +1,7 @@
 const WEB_PHO_AM_THANH = "https://phoamthanh.phomuaban.vn/"
 const WEB_5_GIAY = "https://www.5giay.vn/"
 const WEB_THE_GIOI_DO_CO = "http://thegioidoco.net/"
+const WEB_NHAT_TAO = "https://nhattao.com/"
 
 function loginWebsitePAT() {
     $.ajax({
@@ -41,7 +42,6 @@ function loginWebsiteTGDC() {
         cache: true,
         async: false,
         success: function(response) {
-            debugger;
             console.log("Đăng nhập thành công.");
         }
     });
@@ -57,10 +57,16 @@ function isLoginedTGDC() {
         async: false,
         success: function(response) {
             var checkLogin = $(response).find('a[href="register/facebook?reg=1"]').text().trim();
-            if ('Login with Facebook' == checkLogin) {
+            if ('Login with Facebook' == checkLogin || 'Đăng Nhập bằng Facebook' == checkLogin) {
                 isLogined = false;
             }
         }
     });
     return isLogined;
+}
+
+function injectScript(src, where) {
+    var elm = document.createElement('script');
+    elm.src = src;
+    document[where || 'head'].appendChild(elm);
 }

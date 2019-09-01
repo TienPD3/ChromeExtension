@@ -13,7 +13,7 @@ $(document).ready(function () {
 function editNewsTGDC() {
     $.ajax({
         method: 'GET',
-        url: 'http://shoptanpham.com/admin/TGDCCreateHtmlAPI.php',
+        url: 'https://shoptanpham.com/admin/TGDCCreateHtmlAPI.php',
         cache: true,
         dataType: 'html',
         async: false,

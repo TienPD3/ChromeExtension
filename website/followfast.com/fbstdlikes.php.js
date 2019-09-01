@@ -83,7 +83,6 @@ $(document).ready(function () {
         console.log(eFirst);
         console.log(eFirst.find('span')[0]);
         var height = eFirst.find('span')[0].offsetHeight;
-        debugger;
         if (STATUS_MY_LIKE_41 == height || STATUS_MY_LIKE_42 == height) {
             Like(eFirst);
         } else {
