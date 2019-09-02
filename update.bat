@@ -3,9 +3,9 @@
 cls
 echo :: ShopTanPham.Com ::
 echo :: Xin vui long doi... ::
-TIMEOUT /T 10 /NOBREAK
+TIMEOUT /T 5 /NOBREAK
 
-echo -- Kiem tra mang Internet --
+echo -- Kiem tra mang Internet(Hoac kiem tra lai ket noi Internet) --
 
 :ping
 ping 1.2.3.4 -n 1 -w 1000 > nul
